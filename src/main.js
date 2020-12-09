@@ -32,12 +32,12 @@ export default class App {
     elevar(numero, potencia) {
         let resultado = numero
 
-        while(potencia != 0) {
+        while(potencia != 1) {
             resultado = resultado * numero
             potencia = potencia - 1
         }
 
-        
+        return resultado
     }
 }
 
