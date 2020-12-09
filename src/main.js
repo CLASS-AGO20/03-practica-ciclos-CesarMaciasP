@@ -1,16 +1,27 @@
 export default class App {
 
-    convertirAString(numero){ 
-        let string = 0
-        let resultado 
+    factorial(numero){
 
-        while(numero != 0) {
-            numero--
-            string++
+        for(let i = numero; i > 0; resultado = numero * i) {
+            i--
+        }
+
+        return numero
+
+
+    }
+
+    convertirAString(numero){ 
+        let i = 1
+        let resultado = ""
+
+        while(i <= numero) {
+
+            resultado = resultado + "*"
+            i = i + 1
         } 
 
-        
-
+        return resultado
     }
 
     obtenerDivisibles(numero) {
@@ -45,7 +56,7 @@ let app = new App()
 
 console.log(app.factorial)
 
-console.log(app.convertirAString(4))
+console.log(app.convertirAString(7))
 
 console.log(app.obtenerDivisibles(6))
 
