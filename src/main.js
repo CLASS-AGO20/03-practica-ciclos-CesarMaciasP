@@ -1,12 +1,15 @@
 export default class App {
 
     factorial(numero){
+        let resultado = numero
 
-        for(let i = numero; i > 0; resultado = numero * i) {
-            i--
+        for(let i = numero; i > 0; resultado = resultado * i) {
+            if (i > 1) { 
+                i--
+            }
         }
 
-        return numero
+        return resultado
 
 
     }
@@ -54,7 +57,7 @@ export default class App {
 
 let app = new App()
 
-console.log(app.factorial)
+console.log(app.factorial(4))
 
 console.log(app.convertirAString(7))
 
