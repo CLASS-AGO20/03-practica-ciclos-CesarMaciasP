@@ -3,14 +3,13 @@ export default class App {
     factorial(numero){
         let resultado = numero
 
-        for(let i = numero; i > 0; resultado = resultado * i) {
+        for(let i = numero; i > 1; resultado = resultado * i) {
             if (i > 1) { 
                 i--
             }
         }
 
         return resultado
-
 
     }
 
